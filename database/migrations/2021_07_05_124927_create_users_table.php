@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('ipaddr');
             $table->string('description');            
-            $table->integer('role');            
+            $table->integer('role')->default(0);            
             $table->timestamps();
         });
     }
